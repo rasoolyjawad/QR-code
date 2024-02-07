@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Maker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="app.js" async></script>
+  </head>
+  <body>
+    <div class="container">
+      <p>Change your text to QR code</p>
+      <input type="text" name="" id="qrText" placeholder="Write here.." />
+      <div id="history"></div>
+      <div id="imgbox">
+        <iframe
+          id="sample-qr"
+          src="https://giphy.com/embed/Gf5QiP1TWCO8qYKmt7"
+        ></iframe>
+        <img src="/Dual Ring-1s-200px.svg" alt="loader" id="loader" />
+        <img src="" alt="" id="qrImg" />
+      </div>
+      <button class="button" id="imgbutton">Generate QR code</button>
+      <button class="button btn2" target="_blank" id="downloadBtn">
+        Download QR Code
+      </button>
+    </div>
+    <footer id="footer"></footer>
+  </body>
+</html>

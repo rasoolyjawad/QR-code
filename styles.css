@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  background: url(/Curve\ Line.svg) repeat center center/cover;
+}
+.container {
+  display: flex;
+  background-color: #263a56;
+  color: #f3f3f3;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  align-content: center;
+  flex-direction: column;
+  box-shadow: rgb(83, 111, 157) 0px 2px 15px;
+}
+#imgbox {
+  padding: 2rem;
+  text-align: center;
+  align-self: center;
+}
+#imgbox iframe {
+  width: 150px;
+  height: 150px;
+}
+#qrImg {
+  transition: opacity 0.5s ease; /* Define transition effect for opacity */
+  opacity: 0; /* Initially set opacity to 0 */
+}
+
+p {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+input {
+  font-size: 1rem;
+  padding: 0.5rem 0.4rem;
+  border-radius: 3px;
+}
+
+.button {
+  font-size: 20px;
+  padding: 1rem 0rem;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #a51d66;
+  color: #eee9e6;
+  border-radius: 3px;
+  border: none;
+  margin: 5px 0;
+}
+.button:hover {
+  background-color: #b9165b;
+}
+
+.button:active {
+  background-color: #26725e;
+  box-shadow: 0 2px #666;
+  transform: translateY(3px);
+}
+.btn2 {
+  background-color: #607cad;
+  display: none;
+}
+.btn2:hover {
+  background-color: #26725e;
+}
+.remove_qr {
+  display: none;
+}
+#loader {
+  display: none;
+}
+#footer {
+  color: #eee9e6;
+  margin: 1rem;
+  position: absolute;
+  top: 90%;
+  user-select: none;
+}
+#footer i {
+  color: chocolate;
+}
+
+/* Media querries */
+
+@media screen and (max-width: 786px) {
+  .container {
+    width: 330px;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  input {
+    font-size: 0.9rem;
+  }
+  .button {
+    font-size: 1rem;
+  }
+}
